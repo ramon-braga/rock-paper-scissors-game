@@ -76,14 +76,23 @@ body {
     border-radius: 20px;
 }
 
-.reset-button {
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.reset-button,
+.auto-play-button {
     margin-top: 50px;
     width: 200px;
     display: flex;
     justify-content: center;
 }
 
-.reset-button button {
+.reset-button button,
+.auto-play-button button {
     width: 85%;
     padding: 20px 0;
     font-size: 1.3rem;
@@ -93,8 +102,39 @@ body {
     background-color: rgba(255, 255, 255, 0.74);
 }
 
-.reset-button button:hover {
+.auto-play-button button {
     background-color: rgb(16, 132, 228);
-    color: rgba(255, 255, 255, 0.74);;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.reset-button button:hover,
+.auto-play-button button:hover {
+    background-color: rgba(255, 208, 0, 0.795);
+    color: rgba(255, 255, 255, 0.74);
+    transition: 0.5s;
+}
+.reseting-confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 40%;
+    border: ;
+}
+
+.reseting-confirmation button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.reseting-confirmation button:hover {
+    background-color: rgba(255, 208, 0, 0.795);
+    color: rgba(255, 255, 255, 0.74);
     transition: 0.5s;
 }
